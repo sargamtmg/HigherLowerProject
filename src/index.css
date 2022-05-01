@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container{
+  display:flex;
+}
+
+.option{
+  height:100vh;
+  width:50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.red{
+  background-image: url("cross.jpg");
+  background-position: center center;
+  background-color: red;
+}
+
+.green{
+  background-image: url("tick.jpg");
+  background-position: center center;
+  background-color: green;
+}
+
+.result{
+  height:80px;
+  width: 80px;
+  border-radius: 50%;
+  position:absolute;
+  top:calc(50% - 40px);
+  left:calc(50% - 40px);
+}
+
+.highScore{
+  color: white;
+  height:20%;
+  font-size: 40px;
+  font-style: oblique;
+}
+
+.vs{
+  background-image: url("vs.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.option2{
+  height:100vh;
+  width:50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.bggrad{
+  width: 100%;
+  background-image: linear-gradient(transparent ,black);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:white;
+  height: 50%;
+}
+
+.tittleGrad{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(rgb(255,255,255,0.2) 60%,rgb(255,255,255,0.1),transparent);
+}
+
+.higher, .lower{
+  width:fit-content;
+  padding:10px;
+  border-radius: 10%;
+  border-color: white;
+  border: 3px solid white;
+  margin: 20px;
+}
+
+.higher:hover, .lower:hover{
+
+  color: black;
+  background-color: white;
+  cursor: pointer;
+}
+
+.score{
+  color: white;
+  align-self: flex-end;
+  flex-grow: 1;
+}
+
+.hidden{
+  display: none;
+}
+
+.homepage-main{
+  width:100vw;
+  height:100vh;
+  background-image: url("home-bg-image.jpg");
+  background-size: cover;
+  background-position: center center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-button{
+  width:auto;
+  padding: 10px;
+  border:4px solid white;
+  border-radius: 5%;
+  color:white;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.start-button:hover{
+  background-color: white;
+  color:black;
+}
+
+.homeScore{
+  color:white;
+  font-size: 20px;
+}
+
+.homeHighScore{
+  position:absolute;
+  bottom:30px;
+  right:30px;
+  color:white;
+  font-family: fantasy;
+  font-size: 30px;
+}
+
+.gifAnimation{
+  width:400px;
+  height:250px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .container{
+    display:flex;
+    flex-direction: column;
+  }
+  .option{
+    height:50vh;
+    width:100vw;
+  }
+
+  .option2{
+    height:50vh;
+    width:100vw;
+  }
+
+  .higher, .lower{
+    margin:5px;
+  }
+}
